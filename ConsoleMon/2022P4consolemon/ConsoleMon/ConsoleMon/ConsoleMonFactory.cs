@@ -16,7 +16,7 @@ namespace ConsoleMonsters
     {
         private Dictionary<string, ConsoleMonData> templates = new Dictionary<string, ConsoleMonData>();
 
-        public void Load(string datafile)
+        public void Load()
         {
             //lees je regels in 
             string[] lines = File.ReadAllLines(@"C:\Users\borde\Documents\Ma\Periode 1.4\F2M4GD\ConsoleMon\2022P4consolemon\ConsoleMon\ConsoleMon\monsterdata.txt");
@@ -99,5 +99,6 @@ namespace ConsoleMonsters
         {
             return MakeConsoleMon(templates[monstertype]);
         }
+
     }
 }

@@ -8,7 +8,7 @@ namespace ConsoleMon
 {
     class ConsoleMon
     {
-        public string name = "Pickachu"; 
+        public string name = "Pickachu";
         public int health = 10;
         public int energy = 200;
         public Elements strenght = Elements.Lightning;
@@ -19,15 +19,15 @@ namespace ConsoleMon
 
         public string monsterType;
 
-        internal void  TakeDamage(int damage)
+        internal void TakeDamage(int damage)
         {
-            
+
             int Health = health - damage;
         }
 
         internal void DepleteEnergy(int Energy)
         {
-            
+
             int bEnergy = energy - Energy;
         }
 
@@ -53,26 +53,5 @@ namespace ConsoleMon
             }
         }
 
-    }
-
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            List<string> skills = new List<string>() { "Thunderbolt", "Greater Thunderbolt", "Ultimate Thunderbolt" };
-
-            skills.Add("lightning spear");
-            skills.Add("Greater Lightning spear");
-            skills.Add("Dash");
-
-            skills.Remove("Dash");
-
-            foreach (string skill in skills)
-            {
-                Console.WriteLine(skill);
-            }
-
-            Console.ReadLine();
-        }
     }
 }

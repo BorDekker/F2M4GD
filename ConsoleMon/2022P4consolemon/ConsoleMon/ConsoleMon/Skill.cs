@@ -9,9 +9,9 @@ namespace ConsoleMon
 
     class Skill
     {
-        string name = "thunder bolt";
-        int damage = 2;
-        int EnergyCost = 30;
+        internal string name = "thunder bolt";
+        internal int damage = 2;
+        internal int EnergyCost = 30;
         public Elements element;
 
         internal void UseOn(ConsoleMon caster, ConsoleMon target)
